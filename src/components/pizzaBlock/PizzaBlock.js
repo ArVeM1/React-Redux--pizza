@@ -47,7 +47,8 @@ const PizzaBlock = ({ id, name, imageUrl, price, types, sizes, onClickAddPizza, 
 								active: activeTypes === index,
 								disabled: !types.includes(index),})}
 								onClick={() => onSelectType(index)}
-								key={type}>{type}</li>
+								key={type}>{type}
+							</li>
 						))
 					}
 				</ul>

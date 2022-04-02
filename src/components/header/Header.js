@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Button} from '../index';
+import { Button } from '../index';
 import { Link } from 'react-router-dom';
 
 import logoSvg from "../../assets/img/pizza-logo.svg";

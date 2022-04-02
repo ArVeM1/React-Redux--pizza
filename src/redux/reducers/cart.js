@@ -30,9 +30,9 @@ const cart = (state = initialState, action) => {
 			const newItems = {
 				...state.items,
 				[action.payload.id]: {
-				items: currentPizzaItems,
-				totalPrice: getTotalPrice(currentPizzaItems),
-			},
+					items: currentPizzaItems,
+					totalPrice: getTotalPrice(currentPizzaItems),
+				},
 			};
 	
 			const totalCount = getTotalSum(newItems, 'items.length');

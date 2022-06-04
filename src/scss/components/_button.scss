@@ -100,6 +100,38 @@
 			margin-right: 2px;
 		}
 
+		&:disabled {
+			opacity: 0.4;
+			border-color: #787878;
+			background-color: white;
+
+			&:hover {
+				s svg path {
+					fill: #787878;
+				}
+			}
+
+			svg path {
+				fill: #787878;
+			}
+
+			&,
+			span {
+				color: $orange;
+			}
+
+			&:hover {
+				i {
+					background-color: $orange;
+					color: white;
+				}
+			}
+
+			&:active {
+				transform: none;
+			}
+		}
+
 		span {
 			font-weight: 600;
 			font-size: 16px;

@@ -4,9 +4,15 @@
 	width: 280px;
 	text-align: center;
 	margin-bottom: 65px;
+	transition: all 0.2s ease-in-out;
 
-	&:not(:nth-of-type(4n)) {
-		margin-right: 3.7%;
+	&:hover {
+		transform: scale(1.03);
+	}
+
+	&-wrapper {
+		display: flex;
+		justify-content: center;
 	}
 
 	&__image {
@@ -47,10 +53,6 @@
 					box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
 					border-radius: 5px;
 					cursor: auto;
-				}
-				&.disabled {
-					opacity: 0.4;
-					pointer-events: none;
 				}
 			}
 		}

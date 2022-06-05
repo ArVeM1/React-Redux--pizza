@@ -25,15 +25,15 @@ export const filterSlice = createSlice({
       state.currentPage = action.payload;
     },
     setFilters(state, action) {
-      if (Object.keys(action.payload).length) {
-        state.currentPage = Number(action.payload.currentPage);
-        state.categoryId = Number(action.payload.categoryId);
-        state.sort = action.payload.sort;
-      } else {
-        state.currentPage = 1;
-        state.categoryId = 0;
-        state.sort = { name: 'популярности', sortProperty: SortPropertyEnum.RATING_DESC };
-      }
+      //   if (Object.keys(action.payload).length) {
+      state.currentPage = Number(action.payload.currentPage);
+      state.categoryId = Number(action.payload.categoryId);
+      state.sort = action.payload.sort;
+      //   } else {
+      //     state.currentPage = 1;
+      //     state.categoryId = 0;
+      //     state.sort = { name: 'популярности', sortProperty: SortPropertyEnum.RATING_DESC };
+      //   }
     },
   },
 });
